@@ -59,7 +59,7 @@ for(n=0;n<(2*M+1);n++) {
 接下來的任務是計算出濾波後的音檔之log spectrum係數，並且把他存到YL & YR的文字檔裡。
 
 要得到spectrum(頻譜圖)，我們需要做的任務就是**傅立葉轉換**。
-至於是使用何種方式來進行**DFT**的呢?我使用的是window method，並且參考老師程式碼裡已提供的hamming window函式，如下所示：
+至於是使用何種方式來進行**DFT**的呢?我使用的是window method，並且參考老師半成品程式碼裡已提供的hamming window函式，如下所示：
 
 ```c
 /* hamming: for n=0,1,2,...N, length of N+1 */
