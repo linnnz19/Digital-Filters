@@ -108,7 +108,7 @@ void LogSpectrum_DFT(short int *xn, int len, FILE *file_Y) {
 
 *show_data.py* 的主要功能為讀取 *simple_filter.c* 所產生的各個存取音訊檔案的文字檔，並且繪製相對應的impulse response & log spectrum圖形。這個python程式主要可以分成兩個部分：
 
-* 脈衝響應圖表(impulse response)：
+* **脈衝響應圖表(impulse response)：**
 
    *plot_impulse_response* 函式讀取hR & hL的各種不同M值的檔案，並且使用 python 的 matplotlib 之 stem 指令繪製產生這些 impulse responses，程式碼如下：
 
@@ -139,7 +139,7 @@ for scenario in file_scenarios:
 ```
 在以上我設定的規範之下，這段python腳本可以成功產生出每一個不同M值下的左右聲道脈衝響應圖。
 
-* 頻譜圖(log spectrum)：
+* **頻譜圖(log spectrum)：**
 
    程式緊接著處理左右聲道的頻譜資料，它讀取YR & YL的各種不同M值的檔案，並且使用 FFT（快速傅立葉變換）計算了左右聲道的頻譜，然後繪製了頻譜圖。程式碼如下：
 
