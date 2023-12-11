@@ -12,7 +12,8 @@
 
 ---
 
-### 1. *simple_filter.c* 概念說明
+### 1. *simple_filter.c* 概念說明  
+
 
 這次的 *simple_filter.c* 程式碼是基於教授提供的半成品程式碼去做功能擴充的。
 
@@ -238,7 +239,14 @@ print("pngs of log spectrums generating complete!")
     <p align="center">圖十一：M=32之右聲道頻譜圖</p>
 
     ![right_channel_spectrum_1024](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/1354ab0e-1572-4427-b2b6-044583c82d92)
-    <p align="center">圖十二：M=1024之右聲道頻譜圖</p>
+    <p align="center">圖十二：M=1024之右聲道頻譜圖</p>  
+
+---
+
+  ### 4. 綜合討論
+
+#### M值的定義  
+* 我們在程式執行前所輸入的M值代表的是濾波器的大小，也就是說，當每次輸入不同的M值時都會隨之產生不同大小以及特性的濾波器。具體來說，輸入M時，濾波器的大小表示為涵蓋了2*M+1個samples，當M的值越大代表涵蓋的samples也會越多，濾波進行的結果也就越準確。反過來說，這也就是為什麼當我們輸入M=1024時 *simple_filter.c* 的執行時間會比較久，因為這個大小下它要計算的樣本量約為M=8時的256倍啊！
 
 
     
