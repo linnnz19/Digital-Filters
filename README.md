@@ -269,7 +269,7 @@ print("pngs of log spectrums generating complete!")
   ![image](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/86725054-a969-429f-a916-d4481b188cad)
   <p align="center">圖十五：M=32時的頻譜圖(ocenaudio)</p>
 
-將此結果與圖八&圖十一做比對，同樣可以發現頻譜圖十分相近。至於為什麼在頻率大於5000是振幅(dB)值不會是0呢？這是因為其實我們對log spectrum的每一個sample做了**以十為底取對數再乘以20**的動作。如此一來，就算原本傅立葉轉換出來dB值接近為0的地方也會被放大到將近20dB的位置。
+將此結果與圖八&圖十一做比對，同樣可以發現頻譜圖十分相近。至於為什麼在頻率大於5000是振幅(dB)值不會是0呢？這是因為其實我們對log spectrum的每一個sample做了**以十為底取對數再乘以20**的動作。如此一來，就算原本傅立葉轉換出來dB值接近為0dB的地方也會被放大到將近20dB的位置。
 
 最後，我們來檢查看看M=1024時的濾波結果是否正確吧。  
 
