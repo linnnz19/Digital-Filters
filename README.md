@@ -5,10 +5,12 @@
 
 ## Table of Contents
 
-1. *simple_filter.c* 概念說明
-2. *show_data.py* 概念說明
-3. 繪製的 impulse responses & log spectrum
-4. 綜合討論
+#### 1. *simple_filter.c* 概念說明
+#### 2. *show_data.py* 概念說明
+#### 3. 繪製的 impulse responses & log spectrum
+#### 4. 綜合討論
+
+---
 
 ### 1. *simple_filter.c* 概念說明
 
@@ -65,7 +67,7 @@ float hamming(int N, int n)
 	return 0.54 - 0.46 * cosf(2*PI*((float)(n))/((float)N));
 }
 ```
-透過應用hamming window，現在我們要對一段特定時間內的sample點進行轉換，題目提供給我們的是20.060 秒到 20.085 秒之間，也就代表N值應該為針對**962880~964008**的取樣點來做傅立葉轉換(秒數乘上sample rate)。
+透過應用hamming window，現在我們要對一段特定時間內的sample點進行轉換，題目提供給我們的是20.060 秒到 20.085 秒之間，也就代表N值應該為針對第**962880~964008**個取樣點來做傅立葉轉換(秒數乘上sample rate)。
 
 我參考了網路上的演算法
 [DFT演算法網址](https://www.geeksforgeeks.org/discrete-fourier-transform-and-its-inverse-using-c/amp/)
@@ -189,6 +191,72 @@ print("pngs of log spectrums generating complete!")
 ```
 
 將以上兩段程式碼結合在一起，便能成功的將所要求的impulse response和log spectrum都繪製出來，並且生成png檔案儲存在當前工作區。
+
+---
+### 3. 繪製的 impulse responses & log spectrum 
+* impulse responses
+  **左聲道：**
+  ![left_channel_impulse_response_8](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/be12542d-f46e-43a6-b291-37a2e6c0b639)
+  <p align="center">圖一：M=8之左聲道脈衝響應</p>  
+  
+  ![left_channel_impulse_response_32](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/29ba663f-2f8b-4749-a8ca-82585b929ffb)
+  <p align="center">圖二：M=32之左聲道脈衝響應</p>
+
+  ![left_channel_impulse_response_1024](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/a41d73fc-a38f-4c57-be1b-225cf5499c17)
+  <p align="center">圖三：M=1024之左聲道脈衝響應</p>
+
+  **右聲道：**
+  ![right_channel_impulse_response_8](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/54d203ab-10b5-4da1-ad44-e2aef2d6b2d6)
+  <p align="center">圖四：M=8之右聲道脈衝響應</p>
+
+  ![right_channel_impulse_response_32](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/e8ac53ce-b14e-4b3c-984b-4fe7b9054508)
+  <p align="center">圖五：M=32之右聲道脈衝響應</p>
+
+  ![right_channel_impulse_response_1024](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/d9960401-d1c9-4372-8218-bd9d23acbfb1)
+  <p align="center">圖六：M=1024之右聲道脈衝響應</p>  
+
+  * log spectrums
+    **左聲道：**
+    ![left_channel_spectrum_8](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/aed5a10e-ce44-4295-8291-950c0c613ff8)
+    <p align="center">圖七：M=8之左聲道頻譜圖</p>
+
+    ![left_channel_spectrum_32](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/aff609f1-d47f-4e68-adbe-df506ce875a9)
+    <p align="center">圖八：M=32之左聲道頻譜圖</p>
+
+    ![left_channel_spectrum_1024](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/18defb22-f57e-4ee3-994c-23978fadcb73)
+    <p align="center">圖九：M=1024之左聲道頻譜圖</p>  
+
+    **右聲道：**
+    ![right_channel_spectrum_8](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/875f0f3d-cafd-4479-99af-cb001940ef0a)
+    <p align="center">圖十：M=8之右聲道頻譜圖</p>
+
+    ![right_channel_spectrum_32](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/661f9cf7-5e43-4fa9-b34f-a1cf4a260b79)
+    <p align="center">圖十一：M=32之右聲道頻譜圖</p>
+
+    ![right_channel_spectrum_1024](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/1354ab0e-1572-4427-b2b6-044583c82d92)
+    <p align="center">圖十二：M=1024之右聲道頻譜圖</p>
+
+
+    
+
+    
+
+
+    
+
+
+
+    
+
+
+    
+  
+
+
+  
+
+
+
 
 
 
