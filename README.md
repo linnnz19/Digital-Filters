@@ -251,6 +251,31 @@ print("pngs of log spectrums generating complete!")
 #### M值如何影響結果
 * 當M值增加時，濾波器的截止頻率(cutoff frequency)也會隨之增加，同時樣本數也增加的情況下會導致脈衝響應的**圖形更為銳利**，如此一來我們便能更清楚的觀察到band-pass filter 以及band-stop filter的響應特性。
 
+  ![image](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/08295715-1182-4e56-8dc2-8c11309a58df)
+  <p align="center">圖十三：標準的band-pass filter響應圖</p>  
+
+  此為我在網路上搜尋到的標準band-pass filter響應圖，將圖三與之作比較可以發現M=1024下的響應圖已經十分接近標準sinc波了，由此可知當M值越大我們filtering的結果也會越為準確。
+
+#### log spectrum 顯示的濾波結果是否正確？
+* 為了檢驗濾波的結果是否為正確，我使用了**ocenaudio**裡的**FFT分析**來檢查比對頻譜結果是否類似。
+
+  ![image](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/41dc0bf5-97cf-413b-a676-35d10b7b6d2d)
+  <p align="center">圖十四：M=8時的頻譜圖(ocenaudio)</p>
+
+將此結果與圖七&圖十做比對，可以發現頻譜圖(上半部分為左聲道、下半部分為右聲道)十分相近。
+
+我們緊接著比對一下M=32以及M=1024時的log spectrum顯示的濾波結果是否正確。
+
+  ![image](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/86725054-a969-429f-a916-d4481b188cad)
+  <p align="center">圖十五：M=32時的頻譜圖(ocenaudio)</p>
+
+將此結果與圖八&圖十一做比對，同樣可以發現頻譜圖十分相近。至於為什麼在頻率大於5000是振幅(dB)值不會是0呢？這是因為其實我們對log spectrum的每一個sample做了**以十為底取對數再乘以20**的動作。如此一來，就算原本傅立葉轉換出來dB值接近為0的地方也會被放大到將近20dB的位置。
+  
+
+  
+
+
+
 
     
 
