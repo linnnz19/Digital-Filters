@@ -68,7 +68,7 @@ float hamming(int N, int n)
 透過應用hamming window，現在我們要對一段特定時間內的sample點進行轉換，題目提供給我們的是20.060 秒到 20.085 秒之間，也就代表N值應該為針對**962880~964008**的取樣點來做傅立葉轉換(秒數乘上sample rate)。
 
 我參考了網路上的演算法
-[DFT演算法網址](https://www.google.com](https://www.geeksforgeeks.org/discrete-fourier-transform-and-its-inverse-using-c/amp/)https://www.geeksforgeeks.org/discrete-fourier-transform-and-its-inverse-using-c/amp/)
+[DFT演算法網址](https://www.geeksforgeeks.org/discrete-fourier-transform-and-its-inverse-using-c/amp/)
 
 做出了一個我的版本之DFT函示，如下所示：
 
