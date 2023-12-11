@@ -195,10 +195,10 @@ print("pngs of log spectrums generating complete!")
 
 ---
 ### 3. 繪製的 impulse responses & log spectrum 
-* impulse responses
+*  **impulse responses**
 
 
-  **左聲道：**
+   **左聲道：**
   ![left_channel_impulse_response_8](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/be12542d-f46e-43a6-b291-37a2e6c0b639)
   <p align="center">圖一：M=8之左聲道脈衝響應</p>  
   
@@ -218,7 +218,7 @@ print("pngs of log spectrums generating complete!")
   ![right_channel_impulse_response_1024](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/d9960401-d1c9-4372-8218-bd9d23acbfb1)
   <p align="center">圖六：M=1024之右聲道脈衝響應</p>  
   
-  * log spectrums
+  * **log spectrums**
 
   
     **左聲道：**
@@ -273,16 +273,16 @@ print("pngs of log spectrums generating complete!")
 
 最後，我們來檢查看看M=1024時的濾波結果是否正確吧。  
 
-<img width="587" alt="image" src="https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/21366698-05bc-405d-b02a-86fe3027148d">
+<img width="587" alt="image" src="https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/6d99074b-a25c-4192-9836-717f8e11b651">
 <p align="center">圖十六：M=1024時的頻譜圖(ocenaudio)</p>
 
 ![left_channel_spectrum_1024](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/b17c133d-fd3c-41a0-928f-d565cf312725)
-<p align="center">圖十六：M=1024時的左聲道頻譜圖</p>
+<p align="center">圖十七：M=1024時的左聲道頻譜圖</p>
 
 ![right_channel_spectrum_1024](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/5f726a88-93f0-4f08-bfc5-231544c26e60)
-<p align="center">圖十七：M=1024時的右聲道頻譜圖</p>
+<p align="center">圖十八：M=1024時的右聲道頻譜圖</p>
 
-交叉比對
+交叉比對上面這三張圖圈起來的部分，可以發現在M=1024的狀況下濾波效果已經十分接近完美了，都有分別達到帶通濾波器和帶阻濾波器所預期得到的效果，藉由以上可以說明我們所執行的濾波結果大致是正確的！
 
 
 
