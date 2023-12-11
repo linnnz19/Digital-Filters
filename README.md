@@ -38,7 +38,7 @@ float high_pass(int m, int n) {
 }
 ```
 
-透過高通 & 低通濾波器的差去達成近似band-stop的效果，並且在主函式中透過for迴圈把濾波後的結果寫入音檔，如下：
+透過高通 & 低通濾波器的差去達成近似band-stop filter的效果，並且在主函式中透過for迴圈把濾波後的結果寫入音檔，如下：
 ```c
 for(n=0;n<(2*M+1);n++) {
 		h_L[n] = band_pass(M, n);
