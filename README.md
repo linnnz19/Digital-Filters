@@ -195,6 +195,7 @@ print("pngs of log spectrums generating complete!")
 ---
 ### 3. 繪製的 impulse responses & log spectrum 
 * impulse responses
+* 
   **左聲道：**
   ![left_channel_impulse_response_8](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/be12542d-f46e-43a6-b291-37a2e6c0b639)
   <p align="center">圖一：M=8之左聲道脈衝響應</p>  
@@ -216,6 +217,7 @@ print("pngs of log spectrums generating complete!")
   <p align="center">圖六：M=1024之右聲道脈衝響應</p>  
 
   * log spectrums
+  * 
     **左聲道：**
     ![left_channel_spectrum_8](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/aed5a10e-ce44-4295-8291-950c0c613ff8)
     <p align="center">圖七：M=8之左聲道頻譜圖</p>
