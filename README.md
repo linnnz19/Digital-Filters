@@ -254,7 +254,7 @@ print("pngs of log spectrums generating complete!")
   ![image](https://github.com/linnnz19/Mini-Project---5-Digital-Filters/assets/128024684/08295715-1182-4e56-8dc2-8c11309a58df)
   <p align="center">圖十三：標準的band-pass filter響應圖</p>  
 
-  此為我在網路上搜尋到的標準band-pass filter響應圖，將圖三與之作比較可以發現M=1024下的響應圖已經十分接近標準sinc波了，由此可知當M值越大我們filtering的結果也會越為準確。
+  此為我在網路上搜尋到的標準band-pass filter響應圖，將圖三與之作比較可以發現M=1024下的響應圖已經十分接近標準響應圖了，由此可知當M值越大我們filtering的結果也會越為準確。
 
 #### log spectrum 顯示的濾波結果是否正確？
 * 為了檢驗濾波的結果是否為正確，我使用了**ocenaudio**裡的**FFT分析**來檢查比對頻譜結果是否類似。
