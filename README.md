@@ -14,12 +14,9 @@
 
 ### 1. *simple_filter.c* 概念說明  
 
+音訊經由 *simple_filter.c* 濾波後分別對左聲道和右聲道近似達到了band-pass & band-stop filter的效果，我們透過更改濾波範圍(FL、FH)即可得到欲得到的band-pass效果。
 
-這次的 *simple_filter.c* 程式碼是基於教授提供的半成品程式碼去做功能擴充的。
-
-濾波後的 *.wav* 檔案分別經過了左聲道和右聲道的band-pass & band-stop filter，老師已於半成品程式碼裡提供我們band-pass filter的樣式，我們僅需要透過更改濾波範圍(FL、FH)即可得到我們想要得到的band-pass效果，
-
-至於band-stop filter我則是透過他近似於high-pass filter減掉low-pass filter來去實現的，high-pass與low-pass程式碼如下所示：
+band-stop filter則是透過他近似於high-pass filter減掉low-pass filter來去實現的，high-pass與low-pass程式碼如下所示：
 ```c
 float low_pass(int m, int n){
 	float wc = 2 * PI * FL / FS;
